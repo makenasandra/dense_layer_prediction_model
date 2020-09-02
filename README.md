@@ -1,7 +1,7 @@
 
 # Predicting Total Video Game Earnings using Dense Layer Neural Network
 In this project the dataset contains video games sold by a retailer and earnings for each video game
-<br>We will use the data to train the Neural Network(NN) to predict how much we expect future video games to earn
+<br>We will use the data to train our 3-layer Neural Network(NN) to predict how much we expect future video games to earn
 <br>Each column represents a game attribute 
 <br>Each row represents a game sold in the past
 <br>We look at each characteristic of the game to predict expected earnings
@@ -77,15 +77,15 @@ Y = training_data_df[['total_earnings']].values
 odel = Sequential()
 #Create layers
 #Input layer with 50 densely connected nodes, input size(no.of features) and ReLU activation function
-model.add(Dense(50, input_dim=9, activation='relu'))
+model.add(Dense(50, input_dim=9, activation='relu', name='input_layer'))
 
 #We can add or remove layers as we experiment
-model.add(Dense(100, activation='relu'))
-model.add(Dense(50, activation='relu'))
+model.add(Dense(100, activation='relu', name='layer_1'))
+model.add(Dense(50, activation='relu', name='layer_2'))
 
 #Our expected output(total earnings) is a single linear value... 
 #...thus we have one node in dense layer and use linear activation function(which is the default)
-model.add(Dense(1, activation='linear'))
+model.add(Dense(1, activation='linear', name='output_layer'))
 
 #We use mean_squared_error(mse) loss function to evaluate accuracy of predictions against the actual 
 model.compile(loss="mse", optimizer="adam")
