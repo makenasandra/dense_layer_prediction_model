@@ -76,7 +76,7 @@ Y = training_data_df[['total_earnings']].values
 #Create Sequential object
 odel = Sequential()
 #Create layers
-#Input layer with 50 densely connected nodes, input size(no.of features) and ReLU activation function
+#First layer with 50 densely connected nodes, input size(no.of features) and ReLU activation function
 model.add(Dense(50, input_dim=9, activation='relu', name='layer_1'))
 
 #We can add or remove layers as we experiment
