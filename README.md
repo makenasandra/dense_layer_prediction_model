@@ -8,7 +8,7 @@ In this project the dataset contains video games sold by a retailer and earnings
 <br>We will use Kera for the the front end layer and backend will be powered by Theano
 <br>Let's begin!
 
-### Preprocess Data###
+### Preprocess Data
 We first start by scaling our data using the MinMaxSCaler from the SkLearn library
 
 
