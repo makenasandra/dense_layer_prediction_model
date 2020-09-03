@@ -148,7 +148,7 @@ print("Earnings Prediction for Proposed Product - ${}".format(prediction))
 
 ## Save the trained model
 We train the model once and save it to a file so that when we want to use later we can just load it and use it 
-<br>**hf file extension**- is a binary format designed for storing python array data
+<br>**Hierarchical Data Format 5(hdf5) **- is a binary data format designed for storing large amounts of numerical/array python data
 
 
 ```python
